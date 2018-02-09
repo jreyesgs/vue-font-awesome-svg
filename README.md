@@ -1,0 +1,1 @@
+# Vue Component for using Font Awesome Icons in SVG  
