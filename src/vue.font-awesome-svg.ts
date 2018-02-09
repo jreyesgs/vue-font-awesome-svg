@@ -31,11 +31,11 @@ Vue.component('fa-icon', {
     color: '#fff',
   },
   computed: {
-    getVector: function () {
-      var _this = this;
-      var d = "";
-      fa.map(function (vector){
-        if(vector.name == _this.name){
+    getVector () {
+      let _this = this;
+      let d = "";
+      fa.map(vector => {
+        if(vector.name == _this.name) {
           d = vector.d;
         }
       })
