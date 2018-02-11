@@ -25,11 +25,10 @@ const fa : Icon[] =[
 ];
 
 Vue.component('fa-icon', {
-  template: '<span class="fa-svg"><svg :width="width" :height="height" viewBox="0 0 20 20"><path :name="name" :fill="color" :d="getVector" /></svg></span>',
+  template: '<span class="fa-svg"><svg :width="size" :height="size" viewBox="0 0 20 20"><path :name="name" :fill="color" :d="getVector" /></svg></span>',
   props:{
     name: "",
-    width: "20px",
-    height: "20px",
+    size: "20px",
     color: '#fff',
   },
   computed: {
